@@ -31,10 +31,10 @@ void app_main(void)
 
 
     for (int i = 10; i >= 0; i--) {
-    	ESP_LOGI(TAG, "Restarting in %d seconds...\n", i);
+    	ESP_LOGI(TAG, "Restarting in %d seconds...", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
-    ESP_LOGI(TAG, "Restarting now.\n");
+    ESP_LOGI(TAG, "Restarting now.");
     fflush(stdout);
     esp_restart();
 

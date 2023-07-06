@@ -36,6 +36,6 @@ void app_main(void)
     }
     ESP_LOGI(TAG, "Restarting now.");
     fflush(stdout);
-    esp_restart();
+    assert(0);
 
 }
